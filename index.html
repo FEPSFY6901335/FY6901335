@@ -88,6 +88,31 @@
       .section-bubble ul li {
         margin-bottom: 10px;
       }
+
+      #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        font-size: 18px;
+        background-color: #22333B; /* Button background color */
+        color: #F2F4F3; /* Button text color */
+        border: none;
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        transition: background-color 0.3s, transform 0.2s;
+      }
+      
+      #backToTop:hover {
+        background-color: #5E503F; /* Hover color */
+        transform: scale(1.1); /* Slightly enlarge on hover */
+      }
+      
+      #backToTop:active {
+        transform: scale(0.95); /* Slightly shrink when clicked */
+      }
       
     </style>
   </head>
@@ -116,6 +141,9 @@
       <button onclick="window.location.href='#Analysis'" class="toc-button">Analysis + Discussion</button>
       <button onclick="window.location.href='#References'" class="toc-button">References</button>
     </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top" onclick="scrollToTop()">⬆️</button>
 
     <!-- Sections -->
     <!-- Abstract Section -->
@@ -355,8 +383,14 @@
             getLastUpdatedTime();
             displayTotalWordCount();
         };
-    </script>
 
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
+    </script>
     
   </body>
 </html>
