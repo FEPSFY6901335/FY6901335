@@ -7,7 +7,7 @@
     <!-- Link to w3schools -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <!-- Style for tables -->
+    <!-- Style for components -->
     <style>
       table {
         font-family: 'Prata', serif;
@@ -321,10 +321,6 @@
         <p id="totalWordCount"></p>
     </main>
 
-    <footer>
-        <p>Your Footer Content</p>
-    </footer>
-
     <!-- Add JavaScript Functions -->
     <script>
         // Insert both the "Last Update" and "Word Count" scripts here
@@ -373,8 +369,8 @@
         }
 
         function displayTotalWordCount() {
-            const IntroductionCount = displayWordCount("Introduction_InText");
-            const AnalysisCount = displayWordCount("Analysis_InText");
+            const IntroductionCount = displayWordCount("Introduction");
+            const AnalysisCount = displayWordCount("Analysis");
             const totalWordCount = IntroductionCount + AnalysisCount;
             document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
         }
