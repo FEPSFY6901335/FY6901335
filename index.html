@@ -35,10 +35,31 @@
         max-width: 800px;
         line-height: 1.6;
       }
+      .toc-button {
+        font-family: 'Prata', serif;
+        font-size: 16px;
+        background-color: #22333B; /* Button color */
+        color: #F2F4F3; /* Text color */
+        border: none;
+        border-radius: 15px; /* Rounded corners */
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+      }
+    
+      .toc-button:hover {
+        background-color: #5E503F; /* Hover color */
+        transform: scale(1.05); /* Slightly enlarge on hover */
+      }
+    
+      .toc-button:active {
+        transform: scale(0.95); /* Shrink slightly when clicked */
+      }
     </style>
   </head>
 
-  <body style="color: #5E503F; background: url('webpage bkg 3.jpg') no-repeat center center fixed; background-size: cover; background-attachment: scroll; margin-left: 50px;">
+  <body style="color: #5E503F; background: url('webpage bkg 3.jpg') no-repeat center center fixed; background-size: cover; margin-left: 50px;">
     <!-- Info + Logo -->
     <img src="WebBanner2.0.png" alt="Banner displaying project title" width="300" height="75">
     <h1 style="font-family:'Prata', serif; font-size: 24px;">ENG0018 Computer Laboratory 2024/25</h1>
@@ -58,25 +79,12 @@
     <hr>
 
     <!-- Table of Contents -->
-    <table>
-      <tr>
-        <th>
-          <h3 style="font-family:'Prata', serif; font-size: 24px;">Contents</h3>
-        </th>
-      </tr>
-      <tr>
-        <td><a href="#Abstract">Abstract</a></td>
-      </tr>
-      <tr>
-        <td><a href="#Introduction">Introduction</a></td>
-      </tr>
-      <tr>
-        <td><a href="#Analysis">Analysis + Discussion</a></td>
-      </tr>
-      <tr>
-        <td><a href="#References">References</a></td>
-      </tr>
-    </table>
+    <div style="text-align: center; margin: 20px 0;">
+      <button onclick="window.location.href='#Abstract'" class="toc-button">Abstract</button>
+      <button onclick="window.location.href='#Introduction'" class="toc-button">Introduction</button>
+      <button onclick="window.location.href='#Analysis'" class="toc-button">Analysis + Discussion</button>
+      <button onclick="window.location.href='#References'" class="toc-button">References</button>
+    </div>
 
     <!-- Sections -->
     <!-- Abstract Section -->
