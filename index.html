@@ -117,12 +117,13 @@
       #verifyTime {
         font-family: 'Prata', serif;
         font-size: 16px;
-        background-color: #22333B; /* Button color */
-        color: #F2F4F3; /* Text color */
+        background-color: #22333B;
+        color: #F2F4F3;
         border: none;
-        border-radius: 15px; /* Rounded corners */
+        border-radius: 15px;
         padding: 10px 20px;
-        margin: 5px;
+        margin: 5px auto; /* Center horizontally */
+        display: block;  /* Make it a block-level element */
         cursor: pointer;
         transition: background-color 0.3s, transform 0.2s;
       }
@@ -340,7 +341,7 @@
             <!-- Last commit time display -->
           <div id="last-updated" class="section-bubble"></div>
             <!-- Verify Button -->
-          <button id="verifyTime" onclick="verifyLastUpdatedTime()" display: block; margin: auto;>Verify Last Modified</button>
+          <button id="verifyTime" onclick="verifyLastUpdatedTime()">Verify Last Modified</button>
         </section>
             
             <!-- Word count code -->
