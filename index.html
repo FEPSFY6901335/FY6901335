@@ -113,28 +113,6 @@
       #backToTop:active {
         transform: scale(0.95); /* Slightly shrink when clicked */
       }
-
-      #verifyTime {
-        font-family: 'Prata', serif;
-        font-size: 16px;
-        background-color: #22333B; /* Button color */
-        color: #F2F4F3; /* Text color */
-        border: none;
-        border-radius: 15px; /* Rounded corners */
-        padding: 10px 20px;
-        margin: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s, transform 0.2s;
-      }
-
-      #verifyTime:hover {
-        background-color: #5E503F; /* Hover color */
-        transform: scale(1.05); /* Slightly enlarge on hover */
-      }
-
-      #verifyTime:active {
-        transform: scale(0.95); /* Shrink slightly when clicked */
-      }
       
     </style>
   </head>
@@ -342,8 +320,9 @@
                 <p>Loading last update time...</p>
     
                 <!-- Verify Button -->
-                <button id="verifyTime" title="Go to top" onclick="verifyLastUpdatedTime()">Verify Last Modified Time</button>
-                <p>hi</p>
+              <div>                
+                <button onclick="verifyLastUpdatedTime()" class="toc-button">Verify Last Modified Time</button>
+              </div>
             </div>
           
                 <!-- Word Count Display -->
