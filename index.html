@@ -124,7 +124,6 @@
         padding: 10px 20px;
         margin: 5px;
         cursor: pointer;
-        text-align: center;
         transition: background-color 0.3s, transform 0.2s;
       }
 
@@ -341,7 +340,7 @@
             <!-- Last commit time display -->
           <div id="last-updated" class="section-bubble"></div>
             <!-- Verify Button -->
-          <button id="verifyTime" onclick="verifyLastUpdatedTime()">Verify Last Modified</button>
+          <button id="verifyTime" onclick="verifyLastUpdatedTime()" display: block; margin: auto;>Verify Last Modified</button>
         </section>
             
             <!-- Word count code -->
@@ -384,7 +383,6 @@
         }
 
         async function verifyLastUpdatedTime() {
-            document.getElementById('last-updated').innerText = 'Verifying...';
             await getLastUpdatedTime();
             alert("Last modified time has been successfully verified from GitHub API.");
         }
