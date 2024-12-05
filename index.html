@@ -313,19 +313,21 @@
     </div>
 
     <main>
-        <!-- Section for Last Update Time -->
+        <!-- Section for Last Update Time and Word Count -->
         <section>
-            <!-- Last commit time display -->
-            <div id="last-updated" class="section-bubble">Loading last update time...</div>
-            <!-- Verify Button -->
-            <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
-                Verify Last Modified Time
-            </button>
+            <div id="last-updated" class="section-bubble">
+                <!-- Last commit time display -->
+                <p>Loading last update time...</p>
+    
+                <!-- Verify Button -->
+                <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
+                    Verify Last Modified Time
+                </button>
+    
+                <!-- Word Count Display -->
+                <p id="totalWordCount">Total word count: 0</p>
+            </div>
         </section>
-
-      <!-- Word count code -->
-        <!-- Placeholder for Total Word Count -->
-        <p id="totalWordCount"></p>
     </main>
 
     <!-- Add JavaScript Functions -->
