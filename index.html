@@ -313,31 +313,28 @@
     </div>
 
     <main>
-        <!-- Section for Last Update Time and Word Count -->
+    <main>
+        <!-- Section for Last Update Time -->
         <section>
-            <div id="last-updated" class="section-bubble">
-                <!-- Last commit time display -->
-                <p>Loading last update time...</p>
-    
-                <!-- Verify Button -->
-              <div>                
-                <button onclick="verifyLastUpdatedTime()" class="toc-button">Verify Last Modified Time</button>
-              </div>
-            </div>
-          
-                <!-- Word Count Display -->
-            <div id="totalWordCount" class="section-bubble">  
-            </div>
+            <!-- Last commit time display -->
+            <div id="last-updated" class="section-bubble">Loading last update time...</div>
+            <!-- Verify Button -->
+            <button onclick="verifyLastUpdatedTime()" class="toc-button">Verify Last Modified</button>
         </section>
+      
+      <!-- Word count code -->
+        <!-- Placeholder for Total Word Count -->
+        <p id="totalWordCount"></p>
+      
     </main>
 
-    <!-- Add JavaScript Functions -->
+<!-- Add JavaScript Functions -->
     <script>
         // Insert both the "Last Update" and "Word Count" scripts here
         async function getLastUpdatedTime() {
             const username = 'FEPSFY6901335';
             const repo = 'FY6901335';
-           
+
             const url = `https://api.github.com/repos/${username}/${repo}/commits`;
             try {
                 const response = await fetch(url, {
@@ -352,7 +349,7 @@
                 const commits = await response.json();
                 if (commits && commits.length > 0) {
                     const lastCommitDate = new Date(commits[0].commit.committer.date);
-                   
+
                     // Displaying the time on load
                     document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
                 } else {
@@ -395,7 +392,7 @@
             behavior: "smooth"
           });
         }
-              
+
         function scrollToTop() {
           window.scrollTo({
             top: 0,
