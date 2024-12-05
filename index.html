@@ -4,13 +4,12 @@
     <title>The Environmental Impact of Moving Heavy Industry to Space</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Link to w3schools -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
     <!-- Style for components -->
     <style>
+
+      <!-- Table Style -->
       table {
-        font-family: 'Prata', serif;
+        font-family: 'Calibri', serif;
         border-collapse: collapse;
         width: 20%;
       }
@@ -35,8 +34,10 @@
         max-width: 800px;
         line-height: 1.6;
       }
+
+      <!-- Button Style -->
       .toc-button {
-        font-family: 'Prata', serif;
+        font-family: 'Calibri', serif;
         font-size: 16px;
         background-color: #22333B; /* Button color */
         color: #F2F4F3; /* Text color */
@@ -56,7 +57,8 @@
       .toc-button:active {
         transform: scale(0.95); /* Shrink slightly when clicked */
       }
-      
+
+      <!-- Sections Style -->
       .section-bubble {
         background-color: #f4f4f4; /* Light background for contrast */
         border-radius: 15px; /* Rounded corners for bubble effect */
@@ -64,7 +66,7 @@
         padding: 20px; /* Space inside the bubble */
         margin: 20px auto; /* Space outside the bubble */
         max-width: 800px; /* Limit the width for readability */
-        font-family: 'Prata', serif;
+        font-family: 'Calibri', serif;
         line-height: 1.6;
       }
     
@@ -115,7 +117,7 @@
       }
 
       #verifyTime {
-        font-family: 'Prata', serif;
+        font-family: 'Calibri', serif;
         font-size: 16px;
         background-color: #22333B;
         color: #F2F4F3;
@@ -136,18 +138,18 @@
       #verifyTime:active {
         transform: scale(0.95); /* Slightly shrink when clicked */
       }
-      
     </style>
   </head>
 
-  <body style="color: #5E503F; background: url('webpage bkg 2.jpg') no-repeat center center fixed; background-size: cover; margin-left: 50px;">
+  <body style="color: #5E503F; background: url('webpage bkg 3.jpg') no-repeat center center fixed; background-size: cover; margin-left: 50px;">
+    
     <!-- Info + Logo -->
     <img src="WebBanner2.0.png" alt="Banner displaying project title" width="300" height="75">
-    <h1 style="font-family:'Prata', serif; font-size: 24px;">ENG0018 Computer Laboratory 2024/25</h1>
-    <h2 style="font-family:'Prata', serif; font-size: 18px;">Student URN: 6901335</h2>
+    <h1 style="font-family:'Calibri', serif; font-size: 24px;">ENG0018 Computer Laboratory 2024/25</h1>
+    <h2 style="font-family:'Calibri', serif; font-size: 18px;">Student URN: 6901335</h2>
 
     <!-- Display Date and Time -->
-    <p id="date&time" style="font-family: 'Prata', serif; font-size: 16px; color: #5E503F;"></p>
+    <p id="date&time" style="font-family: 'Calibri', serif; font-size: 16px; color: #5E503F;"></p>
     <script>
       // JavaScript to display the date and time on the webpage
       const d = new Date();
@@ -155,7 +157,7 @@
     </script>
 
     <!-- Title of Article -->
-    <h2 style="font-family:'Prata', serif; font-size: 36px;">The Environmental Impact of Moving Heavy Industry to Space</h2>
+    <h2 style="font-family:'Calibri', serif; font-size: 36px;">The Environmental Impact of Moving Heavy Industry to Space</h2>
 
     <!-- Buttons of Contents -->
     <div style="text-align: center; margin: 20px 0;">
@@ -226,7 +228,7 @@
         <p>
           (Ritchie, 2020)
         </p>
-        <table style="width: 80%; border-collapse: collapse; margin: 0 auto; font-family: 'Prata', serif; font-size: 16px;">
+        <table style="width: 80%; border-collapse: collapse; margin: 0 auto; font-family: 'Calibri', serif; font-size: 16px;">
           <thead>
             <tr style="background-color: #22333B; color: #F2F4F3;">
               <th style="border: 1px solid #22333B; padding: 8px; text-align: left;">Sub-sector</th>
@@ -404,7 +406,7 @@
             const IntroductionCount = displayWordCount("Introduction");
             const AnalysisCount = displayWordCount("Analysis");
             const totalWordCount = IntroductionCount + AnalysisCount;
-            document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+            document.getElementById("totalWordCount").innerText = `Total Word Count: ${totalWordCount}`;
         }
 
         window.onload = function () {
