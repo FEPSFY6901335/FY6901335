@@ -106,9 +106,10 @@
 
       #backToTop {
         position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 99;
+        bottom: 20px; /* Distance from the bottom */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust to align center */
+        z-index: 99; /* Ensure it overlays content */
         font-size: 18px;
         background-color: #232243; /* Button background color */
         color: #f9f9f9; /* Button text color */
@@ -122,11 +123,11 @@
       
       #backToTop:hover {
         background-color: #9e7e58; /* Hover color */
-        transform: scale(1.1); /* Slightly enlarge on hover */
+        transform: translateX(-50%) scale(1.1); /* Keep centered and slightly enlarge */
       }
       
       #backToTop:active {
-        transform: scale(0.95); /* Slightly shrink when clicked */
+        transform: translateX(-50%) scale(0.95); /* Keep centered and slightly shrink */
       }
 
       #verifyTime {
